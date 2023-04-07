@@ -1,0 +1,14 @@
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+
+    scroll-behavior: smooth;
+
+    transition: background 0.5s;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}

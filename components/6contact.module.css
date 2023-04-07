@@ -1,0 +1,74 @@
+.header {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    color: rgb(var(--main-color));
+    background: rgb(var(--green-c));
+}
+
+.flex {
+    display: grid;
+    gap: 0.50rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    width: 100%;
+    max-width: 500px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    all: unset;
+    padding: 0.5rem;
+    height: 25px;
+
+    background: rgb(var(--green-c));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+
+    cursor: pointer;
+    color: rgb(var(--main-color));
+}
+
+.first_button {
+    grid-column: 1/4;
+}
+
+.svg {
+    height: 30px;
+    width: 30px;
+    fill: rgb(var(--main-color));
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    width: 100%;
+}
+
+.footer_color {
+    height: 50px;
+    flex: 1;
+}
+
+.footer_color_g {
+    background: rgb(var(--green-c));
+}
+
+.footer_color_y {
+    background: rgb(var(--yellow-c));
+}
+
+.footer_color_b {
+    background: rgb(var(--blue-c));
+}
+
+.footer_color_p {
+    background: rgb(var(--pink-c));
+}

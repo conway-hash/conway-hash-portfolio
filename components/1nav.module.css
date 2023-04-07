@@ -1,0 +1,164 @@
+.nav_mobile_button {
+    all: unset;
+    height: 50px;
+    width: 50px;
+
+    position: fixed;
+    z-index: 99;
+    bottom: 1rem;
+    right: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.svg {
+    height: 40px;
+    width: 40px;
+    fill: rgb(var(--text-main-color));
+    transition: all 0.4s;
+}
+
+.svg_active {
+    fill: rgb(var(--main-color));
+}
+
+.nav_mobile {
+    position: fixed;
+    z-index: 98;
+    bottom: 0;
+    right: 0;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    background: rgb(var(--text-main-color));
+    transform: translate(100%);
+    transition: all 0.4s;
+}
+
+.nav_mobile_appear {
+    transform: translate(0);
+}
+
+.nav_desktop {
+    position: fixed;
+    z-index: 98;
+    bottom: 0;
+    left: 0;
+
+    height: 100%;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav_desktop_btn_cont {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_desktop_button {
+    all: unset;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(var(--text-main-color));
+    transition: all 0.4s;
+}
+
+.nav_desktop_btn_active {
+    background: rgb(var(--text-main-color));
+}
+
+.color_box {
+    height: 100%;
+    flex: 4;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_color {
+    height: 100px;
+    width: 25%;
+}
+
+.nav_color_g {
+    background: rgb(var(--green-c));
+    transition: all 0.5s;
+}
+
+.nav_color_y {
+    background: rgb(var(--yellow-c));
+    transition: all 0.4s;
+}
+
+.nav_color_b {
+    background: rgb(var(--blue-c));
+    transition: all 0.7s;
+}
+
+.nav_color_p {
+    background: rgb(var(--pink-c));
+    transition: all 1s;
+}
+
+.nav_color_a_a {
+    margin-top: 200px;
+    height: 200px;
+}
+
+.nav_color_a_b {
+    margin-top: 50px;
+    height: 300px;
+}
+
+.nav_color_a_c {
+    margin-top: 275px;
+    height: 250px;
+}
+
+.nav_color_a_d {
+    margin-top: 150px;
+    height: 450px;
+}
+
+.menu {
+    height: 100%;
+    flex: 7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    color: rgb(var(--main-color));
+    background: rgb(var(--text-main-color));
+}
+
+.menu_top {
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media screen and (width > 768px){
+    .nav_mobile_button {
+        display: none;
+    }
+
+    .nav_mobile {
+        display: none;
+    }
+
+    .nav_desktop {
+        display: flex;
+    }
+}

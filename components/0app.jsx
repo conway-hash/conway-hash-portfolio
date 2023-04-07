@@ -1,0 +1,81 @@
+import Nav from './1nav';
+import Landing from './2landing';
+import About from './3about';
+import Projects from './4projects';
+import Experience from './5experience';
+import Contact from './6contact';
+
+import styles from './0app.module.css'
+import { useState, useEffect, useRef } from 'react';
+
+export default function App() {
+
+    const sectionRefs = [
+        useRef(null),
+        useRef(null),
+        useRef(null),
+        useRef(null),
+        useRef(null)
+    ];
+    const [intersectingSection, setIntersectingSection] = useState(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIntersectingSection(entry.target.id)
+
+                    };
+                });
+            },
+            {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            }
+        );
+
+        sectionRefs.forEach((ref) => {
+            if (ref.current) {
+                observer.observe(ref.current);
+            }
+        });
+
+        return () => {
+            sectionRefs.forEach((ref) => {
+                if (ref.current) {
+                    observer.unobserve(ref.current);
+                }
+            });
+        };
+    }, []);
+
+    const getContainerStyle = () => {
+        switch (intersectingSection) {
+            case 'landing':
+                return { backgroundColor: 'rgba(var(--main-color),0.2)' };
+            case 'about':
+                return { backgroundColor: 'rgba(var(--blue-c),0.2)' };
+            case 'projects':
+                return { backgroundColor: 'rgba(var(--pink-c),0.2)' };
+            case 'experience':
+                return { backgroundColor: 'rgba(var(--yellow-c),0.2)' };
+            case 'contact':
+                return { backgroundColor: 'rgba(var(--green-c),0.2)' };
+            default:
+                return {};
+        }
+    };
+
+    return (
+        <div className={styles.container} style={getContainerStyle()}>
+            <Nav intersectingSection={intersectingSection} />
+            <Landing ref={sectionRefs[0]} />
+            <About ref={sectionRefs[1]} />
+            <Projects ref={sectionRefs[2]} />
+            <Experience ref={sectionRefs[3]} />
+            <Contact ref={sectionRefs[4]} />
+        </div>
+    )
+}
