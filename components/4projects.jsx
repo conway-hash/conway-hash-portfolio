@@ -1,6 +1,7 @@
 import styles from './4projects.module.css'
 import utilities from '/styles/utilities.module.css'
 import React, { forwardRef } from 'react';
+import Link from 'next/link';
 
 const projects = forwardRef((props, ref) => {
     return (
@@ -13,7 +14,7 @@ const projects = forwardRef((props, ref) => {
                 Anyway, you should at least have a look at them.
             </p>
             <div className={styles.flex}>
-                <button className={styles.button}>Take me to PROJECTS</button>
+                <Link href="/projects" className={styles.button}>Take me to PROJECTS</Link>
             </div>
         </section>
     )

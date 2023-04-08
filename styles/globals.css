@@ -4,7 +4,8 @@
   --green-c: 32, 252, 143;
   --yellow-c: 255, 210, 63;
   --blue-c: 94, 43, 255;
-  --pink-c: 245, 88, 114; 
+  --pink-c: 245, 88, 114;
+  font-size: 16px;
 }
 
 * {
@@ -55,6 +56,10 @@ button {
 
 
 @media screen and (width > 768px){
+  :root {
+    font-size: 18px;
+  }
+
   ::-webkit-scrollbar {
     width: 19px;
   }

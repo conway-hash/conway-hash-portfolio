@@ -1,12 +1,15 @@
 import styles from './1nav.module.css'
-import { useState } from 'react';
+import { useState } from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Nav({ intersectingSection }) {
     const [isOpen, setOpen] = useState(false);
     const toggleMenu = () => setOpen(!isOpen);
     const anchorClick = () => setOpen(!isOpen);
 
-    console.log(intersectingSection)
+    const router = useRouter()
+    const pathname = router.pathname
 
     return (
         <>
@@ -23,26 +26,26 @@ export default function Nav({ intersectingSection }) {
                 </div>
                 <ul className={styles.menu}>
                     <li className={styles.menu_top}>CONWAY_HASH$</li>
-                    <a href='#home' onClick={anchorClick}><li>HOME</li></a>
-                    <a href='#about' onClick={anchorClick}><li>ABOUT</li></a>
-                    <a href='#projects' onClick={anchorClick}><li>PROJECTS</li></a>
-                    <a href='#experience' onClick={anchorClick}><li>EXPERIENCE</li></a>
-                    <a href='#contact' onClick={anchorClick}><li>CONTACT</li></a>
+                    <Link href='/#home' onClick={anchorClick}><li>HOME</li></Link>
+                    <Link href='/#about' onClick={anchorClick}><li>ABOUT</li></Link>
+                    <Link href='/#projects' onClick={anchorClick}><li>PROJECTS</li></Link>
+                    <Link href='/#experience' onClick={anchorClick}><li>EXPERIENCE</li></Link>
+                    <Link href='/#contact' onClick={anchorClick}><li>CONTACT</li></Link>
                 </ul>
             </nav>
 
             <nav className={styles.nav_desktop}>
-                <a href="#home" className={`${styles.nav_desktop_button} ${intersectingSection === "home" ? styles.nav_desktop_btn_active : ""}`}></a>
-                <a href="#about" className={`${styles.nav_desktop_button} ${intersectingSection === "about" ? styles.nav_desktop_btn_active : ""}`}></a>
+                <Link href="/#home" className={`${styles.nav_desktop_button} ${intersectingSection === "home" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive}`}></Link>
+                <Link href="/#about" className={`${styles.nav_desktop_button} ${intersectingSection === "about" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive}`}></Link>
                 <div className={styles.nav_desktop_btn_cont}>
-                    <a href="#projects" className={`${styles.nav_desktop_button} ${intersectingSection === "projects" ? styles.nav_desktop_btn_active : ""}`}></a>
-                    <button className={styles.nav_desktop_button}></button>
+                    <Link href="/#projects" className={`${styles.nav_desktop_button} ${intersectingSection === "projects" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive}`}></Link>
+                    <Link href="/projects" className={`${styles.nav_desktop_button} ${intersectingSection === "projectsapp" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive}`}></Link>
                 </div>
                 <div className={styles.nav_desktop_btn_cont}>
-                    <a href="#experience" className={`${styles.nav_desktop_button} ${intersectingSection === "experience" ? styles.nav_desktop_btn_active : ""}`}></a>
+                    <Link href="/#experience" className={`${styles.nav_desktop_button} ${intersectingSection === "experience" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive}`}></Link>
                     <button className={styles.nav_desktop_button}></button>
                 </div>
-                <a href="#contact" className={`${styles.nav_desktop_button} ${intersectingSection === "contact" ? styles.nav_desktop_btn_active : ""}`}></a>
+                <Link href="/#contact" className={`${styles.nav_desktop_button} ${intersectingSection === "contact" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive}`}></Link>
             </nav>
         </>
     )

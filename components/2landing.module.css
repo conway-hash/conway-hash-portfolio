@@ -4,4 +4,24 @@
     font-weight: 300;
     max-width: 500px;
     font-size: 1.1rem;
+    position: relative;
+}
+
+.paragraph_main::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    transform: translate(4px);
+    height: 90%;
+    background: rgb(var(--text-main-color));
+    animation: cursor_animation alternate infinite 0.7s;
+}
+
+@keyframes cursor_animation {
+    0% {
+        background: rgba(var(--text-main-color),0);
+    }
+    100% {
+        background: rgba(var(--text-main-color),1);
+    }
 }

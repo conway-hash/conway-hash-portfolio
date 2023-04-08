@@ -72,6 +72,10 @@
     transition: all 0.4s;
 }
 
+.nav_desktop_btn_inactive:hover {
+    animation: infinite alternate button_animation 1s;
+}
+
 .nav_desktop_btn_active {
     background: rgb(var(--text-main-color));
 }
@@ -147,6 +151,15 @@
     padding: 1rem 0.5rem;
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+@keyframes button_animation {
+    0% {
+        background-color: rgba(var(--text-main-color),0);
+    }
+    100% {
+        background-color: rgba(var(--text-main-color),0.6);
+    }
 }
 
 @media screen and (width > 768px){
