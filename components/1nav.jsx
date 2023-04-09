@@ -25,7 +25,7 @@ export default function Nav({ intersectingSection }) {
                     <div className={`${styles.nav_color} ${styles.nav_color_b} ${isOpen ? styles.nav_color_a_d : ''}`}></div>
                 </div>
                 <ul className={styles.menu}>
-                    <li className={styles.menu_top}>CONWAY_HASH$</li>
+                    <li className={styles.menu_top}>$CONWAY_HASH</li>
                     <Link href='/#home' onClick={anchorClick}><li>HOME</li></Link>
                     <Link href='/#about' onClick={anchorClick}><li>ABOUT</li></Link>
                     <Link href='/#projects' onClick={anchorClick}><li>PROJECTS</li></Link>

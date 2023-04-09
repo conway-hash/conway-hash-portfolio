@@ -6,6 +6,18 @@
     font-size: 1.1rem;
     position: relative;
 }
+/*
+.paragraph_main {
+    text-shadow: linear-gradient(90deg,rgb(var(--pink-c)),rgb(var(--green-c)),rgb(var(--yellow-c)),rgb(var(--blue-c))) 1px 0 10px;;
+}
+*/
+
+        
+.paragraph_main {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+}
 
 .paragraph_main::after {
     content: '';
