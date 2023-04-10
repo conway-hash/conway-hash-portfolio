@@ -47,15 +47,17 @@ const landing = forwardRef((props, ref) => {
 
     return (
         <section ref={ref} id="home" className={utilities.section}>
-            <p className={`${styles.paragraph}`}>
-                Hello, my name is
-            </p>
-            <p className={`${styles.paragraph} ${styles.paragraph_main}`}>
-                ${loadingName}
-            </p>
-            <p className={styles.paragraph}>
-                Welcome to my website!
-            </p>
+            <div className={`${utilities.paragraph_container} ${utilities.landing_show}`}>
+                <p className={`${styles.paragraph}`}>
+                    Hello, my name is
+                </p>
+                <p className={`${styles.paragraph} ${styles.paragraph_main}`}>
+                    ${loadingName}
+                </p>
+                <p className={styles.paragraph}>
+                    Welcome to my website!
+                </p>
+            </div>
         </section>
     )
 })

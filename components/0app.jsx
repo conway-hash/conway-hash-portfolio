@@ -25,7 +25,6 @@ export default function App() {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setIntersectingSection(entry.target.id)
-
                     };
                 });
             },
@@ -71,11 +70,11 @@ export default function App() {
     return (
         <div className={styles.container} style={getContainerStyle()}>
             <Nav intersectingSection={intersectingSection} />
-            <Landing ref={sectionRefs[0]} />
-            <About ref={sectionRefs[1]} />
-            <Projects ref={sectionRefs[2]} />
-            <Experience ref={sectionRefs[3]} />
-            <Contact ref={sectionRefs[4]} />
+            <Landing ref={sectionRefs[0]} prop={intersectingSection == 'landing' ? true : false} />
+            <About ref={sectionRefs[1]} prop={intersectingSection == 'about' ? true : false} />
+            <Projects ref={sectionRefs[2]} prop={intersectingSection == 'projects' ? true : false} />
+            <Experience ref={sectionRefs[3]} prop={intersectingSection == 'experience' ? true : false} />
+            <Contact ref={sectionRefs[4]} prop={intersectingSection == 'contact' ? true : false} />
         </div>
     )
 }

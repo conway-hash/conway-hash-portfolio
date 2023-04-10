@@ -1,7 +1,7 @@
 .nav_mobile_button {
     all: unset;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 
     position: fixed;
     z-index: 99;
@@ -9,21 +9,23 @@
     right: 1rem;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 8px;
 
     cursor: pointer;
 }
 
-.svg {
-    height: 40px;
-    width: 40px;
-    fill: rgb(var(--text-main-color));
+.rectangle {
+    height: 5px;
+    width: 35px;
+    background: rgb(var(--text-main-color));
     transition: all 0.4s;
 }
 
-.svg_active {
-    fill: rgb(var(--main-color));
+.rectangle_active {
+    background: rgb(var(--main-color));
 }
 
 .nav_mobile {
@@ -88,9 +90,14 @@
     flex-direction: row;
 }
 
-.nav_color {
-    height: 100px;
+.nav_color_cont {
+    height: 100%;
     width: 25%;
+}
+
+.nav_color_w {
+    background: rgb(var(--text-main-color));
+    transition: all 0.5s;
 }
 
 .nav_color_g {
@@ -113,25 +120,6 @@
     transition: all 1s;
 }
 
-.nav_color_a_a {
-    margin-top: 200px;
-    height: 200px;
-}
-
-.nav_color_a_b {
-    margin-top: 50px;
-    height: 300px;
-}
-
-.nav_color_a_c {
-    margin-top: 275px;
-    height: 250px;
-}
-
-.nav_color_a_d {
-    margin-top: 150px;
-    height: 450px;
-}
 
 .menu {
     height: 100%;
