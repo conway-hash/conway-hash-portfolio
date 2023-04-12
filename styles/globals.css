@@ -72,3 +72,9 @@ button {
     background-color: rgb(var(--text-main-color));
   }
 }
+
+@media screen and (width > 1440px){
+  :root {
+    font-size: 20px;
+  }
+}

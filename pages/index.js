@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import App from '../components/0app'
 
-export default function Home() {
+export default function Main() {
   return (
     <>
       <Head>

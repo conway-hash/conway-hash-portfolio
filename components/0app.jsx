@@ -4,6 +4,7 @@ import About from './3about';
 import Projects from './4projects';
 import Experience from './5experience';
 import Contact from './6contact';
+import Conway from './7conway';
 
 import styles from './0app.module.css'
 import { useState, useEffect, useRef } from 'react';
@@ -68,13 +69,16 @@ export default function App() {
     };
 
     return (
-        <div className={styles.container} style={getContainerStyle()}>
-            <Nav intersectingSection={intersectingSection} />
-            <Landing ref={sectionRefs[0]} prop={intersectingSection == 'landing' ? true : false} />
-            <About ref={sectionRefs[1]} prop={intersectingSection == 'about' ? true : false} />
-            <Projects ref={sectionRefs[2]} prop={intersectingSection == 'projects' ? true : false} />
-            <Experience ref={sectionRefs[3]} prop={intersectingSection == 'experience' ? true : false} />
-            <Contact ref={sectionRefs[4]} prop={intersectingSection == 'contact' ? true : false} />
-        </div>
+        <>
+            <Conway />
+            <div className={styles.container} style={getContainerStyle()}>
+                <Nav intersectingSection={intersectingSection} />
+                <Landing ref={sectionRefs[0]} prop={intersectingSection == 'landing' ? true : false} />
+                <About ref={sectionRefs[1]} prop={intersectingSection == 'about' ? true : false} />
+                <Projects ref={sectionRefs[2]} prop={intersectingSection == 'projects' ? true : false} />
+                <Experience ref={sectionRefs[3]} prop={intersectingSection == 'experience' ? true : false} />
+                <Contact ref={sectionRefs[4]} prop={intersectingSection == 'contact' ? true : false} />
+            </div>
+        </>
     )
 }
