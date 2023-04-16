@@ -1,10 +1,10 @@
-import styles from './4projects.module.css'
+import styles from './5experience.module.css'
 import utilities from '/styles/utilities.module.css'
 import React, { forwardRef } from 'react';
 
-const projects = forwardRef((props, ref) => {
+const experience_main = forwardRef((props, ref) => {
     return (
-        <section ref={ref} id="projects" className={utilities.section}>
+        <section ref={ref} id="experience_main" className={`${utilities.section} ${styles.container}`}>
             <h1 className={`${styles.header} ${props.prop ? utilities.header_show : utilities.header_hide}`}>PROJECTS</h1>
             <div className={`${utilities.paragraph_container} ${props.prop ? utilities.paragraph_show : utilities.paragraph_hide}`}>
                 <p className={utilities.paragraph}>
@@ -15,7 +15,7 @@ const projects = forwardRef((props, ref) => {
                 </p>
 
                 <div className={styles.flex}>
-                    <a href="/#projects_main" className={styles.button}>Take me to PROJECTS</a>
+                    <a href="/#experience" className={styles.button}>Take me to PROJECTS</a>
                 </div>
             </div>
 
@@ -23,4 +23,4 @@ const projects = forwardRef((props, ref) => {
     )
 })
 
-export default projects
+export default experience_main

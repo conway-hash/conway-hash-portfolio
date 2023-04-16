@@ -29,6 +29,9 @@
     opacity: 1;
 }
 
+.grid_box {
+    transition: all 1.5s;
+}
 
 .grid_box_active {
     background: rgba(var(--text-main-color),0.04);

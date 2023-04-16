@@ -14,7 +14,7 @@ const experience = forwardRef((props, ref) => {
                     Anyway, you should at least have a look at them.
                 </p>
                 <div className={styles.flex}>
-                    <button className={styles.button}>Take me to EXPERIENCES</button>
+                    <a href='/#experience_main' className={styles.button}>Take me to EXPERIENCES</a>
                 </div>
             </div>
         </section>

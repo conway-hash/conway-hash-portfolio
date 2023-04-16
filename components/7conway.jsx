@@ -26,7 +26,7 @@ const Conway = () => {
         const new_array = outer_array.map((inner_array, i) =>
             inner_array.map((value, j) =>
                 <div
-                    className={value === 1 ? styles.grid_box_active : styles.grid_box_inactive}
+                    className={`${styles.grid_box} ${value === 1 ? styles.grid_box_active : styles.grid_box_inactive}`}
                     key={`box_${i}_${j}`}
                 ></div>
             )

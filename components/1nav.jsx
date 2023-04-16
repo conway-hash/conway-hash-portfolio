@@ -69,11 +69,11 @@ export default function Nav({ intersectingSection }) {
                 <Link href="/#about" aria-label="about" className={`${styles.nav_desktop_button} ${intersectingSection === "about" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
                 <div className={styles.nav_desktop_btn_cont}>
                     <Link href="/#projects" aria-label="projects" className={`${styles.nav_desktop_button} ${intersectingSection === "projects" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
-                    <Link href="/projects" aria-label="projects-grid" className={`${styles.nav_desktop_button} ${intersectingSection === "projectsapp" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
+                    <Link href="/#projects_main" aria-label="projects_main" className={`${styles.nav_desktop_button} ${intersectingSection === "projects_main" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
                 </div>
                 <div className={styles.nav_desktop_btn_cont}>
                     <Link href="/#experience" aria-label="experience" className={`${styles.nav_desktop_button} ${intersectingSection === "experience" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
-                    <button aria-label="experience-grid" className={styles.nav_desktop_button}></button>
+                    <Link href="/#experience_main" aria-label="experience_main" className={`${styles.nav_desktop_button} ${intersectingSection === "experience_main" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
                 </div>
                 <Link href="/#contact" aria-label="contact" className={`${styles.nav_desktop_button} ${intersectingSection === "contact" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
             </nav>
