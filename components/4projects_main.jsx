@@ -10,22 +10,26 @@ const projects_main = forwardRef((props, ref) => {
                 <a href="/#projects" className={styles.button}>Back to home</a>
             </div>
             <div className={styles.grid}>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
-                <div className={styles.grid_el}></div>
+                <a className={styles.grid_el} href='http://elimo.sk/'>
+                    <div className={styles.grid_el_overlay}></div>
+                    <h2>Elimo.sk</h2>
+                    <img src='media/projects/elimo.png' />
+                </a>
+                <a className={styles.grid_el} href='http://elimo.sk/'>
+                    <div className={styles.grid_el_overlay}></div>
+                    <h2>Elimo.sk</h2>
+                    <img src='media/projects/elimo.png' />
+                </a>
+                <a className={styles.grid_el} href='http://elimo.sk/'>
+                    <div className={styles.grid_el_overlay}></div>
+                    <h2>Elimo.sk</h2>
+                    <img src='media/projects/elimo.png' />
+                </a>
+                <a className={styles.grid_el} href='http://elimo.sk/'>
+                    <div className={styles.grid_el_overlay}></div>
+                    <h2>Elimo.sk</h2>
+                    <img src='media/projects/elimo.png' />
+                </a>
             </div>
         </section>
     )
