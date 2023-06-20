@@ -15,21 +15,6 @@ const projects_main = forwardRef((props, ref) => {
                     <h2>Elimo.sk</h2>
                     <img src='media/projects/elimo.png' />
                 </a>
-                <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
-                    <h2>Test.com</h2>
-                    <img />
-                </a>
-                <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
-                    <h2>Test.com</h2>
-                    <img />
-                </a>
-                <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
-                    <h2>Test.com</h2>
-                    <img />
-                </a>
             </div>
         </section>
     )
