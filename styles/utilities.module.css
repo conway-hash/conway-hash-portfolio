@@ -32,6 +32,15 @@
     opacity: 1;
 }
 
+.casual_container {
+    transition: 0.5s opacity;
+    opacity: 0;
+}
+
+.casual_show {
+    opacity: 1;
+}
+
 .header_show {
     animation: header_show forwards 1s;
 }

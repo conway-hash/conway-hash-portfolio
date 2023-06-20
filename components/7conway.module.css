@@ -14,8 +14,8 @@
 }
 
 .grid {
-    height: 800px;
-    width: 800px;
+    height: 1000px;
+    width: 1000px;
     flex-shrink: 0;
 
     display: grid;
@@ -56,7 +56,7 @@
 
 @media screen and (width > 768px){
     .grid {
-        height: 1500px;
-        width: 1500px;
+        height: 2500px;
+        width: 2500px;
     }
 }        

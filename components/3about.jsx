@@ -14,10 +14,10 @@ const about = forwardRef((props, ref) => {
                     I am currently studying programming and app development at MUNI FI Brno.
                 </p>
                 <p className={utilities.paragraph}>
-                    I enjoy working in teams where people have different points of views and solutions regarding problems.
+                    I enjoy working on problem solving, alone or in teams.
                 </p>
                 <p className={utilities.paragraph}>
-                    Besides programming, i fancy playing computer games, drinking teas and dreaming big.
+                    Besides programming, i fancy reading documentations, love drinking tea and trying to dream big.
                 </p>
             </div>
         </section>

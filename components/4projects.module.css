@@ -44,7 +44,7 @@
 .grid {
     flex: 0.8;
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     display: grid;
     gap: 1rem;
     overflow-y: scroll;
@@ -54,16 +54,17 @@
 
 .grid::-webkit-scrollbar {
     width: 5px;
+    background-color: transparent;
 }
-  
+
 .grid::-webkit-scrollbar-thumb {
-    border: rgb(var(--pink-c));
-}
-  
-.grid::-webkit-scrollbar-thumb:active {
+    border: none;
     background-color: rgb(var(--pink-c));
 }
 
+.grid::-webkit-scrollbar-thumb:active {
+    background-color: rgb(var(--pink-c));
+}
 
 .grid_el {
     height: 400px;
@@ -100,7 +101,7 @@
     top: 50%;
     z-index: 2;
     transform: translateX(-50%) translateY(-50%);
-    transition: all 0.2s;
+    transition: all 0.5s ease;
 }
 .grid_el img{
     width: 100%;
@@ -113,12 +114,9 @@
 
 @media screen and (width > 768px){
     .grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 3rem;
+        padding-right: 2rem;
     }
 }
 
-@media screen and (width >= 1440px){
-    .grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}

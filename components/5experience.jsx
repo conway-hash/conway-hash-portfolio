@@ -8,10 +8,10 @@ const experience = forwardRef((props, ref) => {
             <h1 className={`${styles.header} ${props.prop ? utilities.header_show : utilities.header_hide}`}>EXPERIENCE</h1>
             <div className={`${utilities.paragraph_container} ${props.prop ? utilities.paragraph_show : utilities.paragraph_hide}`}>
                 <p className={utilities.paragraph}>
-                    There ain’t a lot of projects that i worked on, other than my small tests, but i sure hope they will grow in numbers.
+                    All frameworks, libraries, programming languages, i studied, read the docs, or i'm currently using to develop projects.
                 </p>
                 <p className={utilities.paragraph}>
-                    Anyway, you should at least have a look at them.
+                    Curious? Click the button below.
                 </p>
                 <div className={styles.flex}>
                     <a href='/#experience_main' className={styles.button}>Take me to EXPERIENCES</a>
