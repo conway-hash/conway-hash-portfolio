@@ -13,7 +13,7 @@ const projects_main = forwardRef((props, ref) => {
                 <a className={styles.grid_el} href='http://elimo.sk/'>
                     <div className={styles.grid_el_overlay}></div>
                     <h2>Elimo.sk</h2>
-                    <img src='media/projects/elimo.png' />
+                    <img src='media/projects/elimo.PNG' />
                 </a>
             </div>
         </section>
