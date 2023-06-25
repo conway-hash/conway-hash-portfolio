@@ -34,7 +34,7 @@
 }
 
 .grid_box_active {
-    background: rgba(var(--text-main-color),0.04);
+    background: rgba(var(--text-main-color),0.1);
 }
 
 .grid_box_inactive {
