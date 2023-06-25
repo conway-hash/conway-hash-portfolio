@@ -72,7 +72,6 @@
     height: 131px;
     width: 131px;
     background: rgba(255, 255, 255, 0.286);
-    position: relative;
 }
 .grid_el:hover .grid_el_overlay{
     background: rgba(var(--yellow-c),0);
@@ -81,11 +80,12 @@
 .grid_el_overlay {
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     background: rgba(var(--yellow-c),0.3);
-    z-index: 1;
     transition: background 0.2s ease;
 }
 

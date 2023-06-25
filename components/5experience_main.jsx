@@ -11,34 +11,34 @@ const experience_main = forwardRef((props, ref) => {
             </div>
             <div className={`${styles.grid} ${utilities.casual_container} ${props.prop ? utilities.casual_show : utilities.casual_hide}`}>
                 <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
+                    <div className={styles.grid_el_overlay}>HTML</div>
                 </a>
                 <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
+                    <div className={styles.grid_el_overlay}>CSS</div>
                 </a>
                 <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
+                    <div className={styles.grid_el_overlay}>JS</div>
                 </a>
                 <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
+                    <div className={styles.grid_el_overlay}>C++</div>
                 </a>
                 <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
+                    <div className={styles.grid_el_overlay}>React</div>
                 </a>
                 <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
+                    <div className={styles.grid_el_overlay}>Next.js</div>
                 </a>
                 <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
+                    <div className={styles.grid_el_overlay}>Node.js</div>
                 </a>
                 <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
+                    <div className={styles.grid_el_overlay}>PHP</div>
                 </a>
                 <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
+                    <div className={styles.grid_el_overlay}>SQL</div>
                 </a>
                 <a className={styles.grid_el} href=''>
-                    <div className={styles.grid_el_overlay}></div>
+                    <div className={styles.grid_el_overlay}>Express</div>
                 </a>
             </div>
         </section>
