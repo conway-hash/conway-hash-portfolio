@@ -7,7 +7,7 @@ const contact = forwardRef((props, ref) => {
     const email = 'tomasbokor.dev@gmail.com'
 
     const linkedin = 'https://www.linkedin.com/in/tom%C3%A1%C5%A1-bokor-77ba45244/'
-    const instagram = 'https://www.instagram.com/fakticky_ja_hej/'
+    const instagram = 'https://www.instagram.com/conway_hash/'
     const github = 'https://github.com/conway-hash'
 
     return (
