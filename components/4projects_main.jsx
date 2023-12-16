@@ -10,11 +10,13 @@ const projects_main = forwardRef((props, ref) => {
                 <a href="/#projects" className={styles.button}>Back to home</a>
             </div>
             <div className={`${styles.grid} ${utilities.casual_container} ${props.prop ? utilities.casual_show : utilities.casual_hide}`}>
+                /*
                 <a className={styles.grid_el} href='http://elimo.sk/'>
                     <div className={styles.grid_el_overlay}></div>
                     <h2>Elimo.sk</h2>
                     <img src='media/projects/elimo.PNG' />
                 </a>
+                */
             </div>
         </section>
     )
