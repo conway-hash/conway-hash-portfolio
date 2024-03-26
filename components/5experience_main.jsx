@@ -54,6 +54,10 @@ const experience_main = forwardRef((props, ref) => {
                     <div className={styles.grid_el_overlay}><h1>C++</h1></div>
                     <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/120px-ISO_C%2B%2B_Logo.svg.png' />
                 </a>
+                <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/Haskell'>
+                    <div className={styles.grid_el_overlay}><h1>C++</h1></div>
+                    <img src='https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Logo_of_the_Haskell_programming_language.svg/800px-Logo_of_the_Haskell_programming_language.svg.png' />
+                </a>
             </div>
         </section>
     )
