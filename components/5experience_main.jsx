@@ -71,6 +71,16 @@ const experience_main = forwardRef((props, ref) => {
                     <div className={styles.grid_el_overlay}><h1>Bash</h1></div>
                     <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Gnu-bash-logo.svg/216px-Gnu-bash-logo.svg.png' />
                 </a>
+                <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/Tailwind_CSS'>
+                    <div className={styles.grid_el_overlay}><h1>Tailwind</h1></div>
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/200px-Tailwind_CSS_logo.svg.png' />
+                </a>
+                {/*
+                <a className={styles.grid_el} href='ADDRESS_TO_WIKI'>
+                    <div className={styles.grid_el_overlay}><h1>NAME</h1></div>
+                    <img src='ADDRESS_TO_WIKI_PNG' />
+                </a>
+                */}
             </div>
         </section>
     )
