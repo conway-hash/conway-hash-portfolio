@@ -8,7 +8,7 @@ const experience = forwardRef((props, ref) => {
             <h1 className={`${styles.header} ${props.prop ? utilities.header_show : utilities.header_hide}`}>EXPERIENCE</h1>
             <div className={`${utilities.paragraph_container} ${props.prop ? utilities.paragraph_show : utilities.paragraph_hide}`}>
                 <p className={utilities.paragraph}>
-                    All frameworks, libraries, programming languages, i studied, read the docs, or i'm currently using to develop projects.
+                    All frameworks, libraries, and programming languages I studied, read the docs, or I'm currently using to develop projects.
                 </p>
                 <p className={utilities.paragraph}>
                     Curious? Click the button below.
