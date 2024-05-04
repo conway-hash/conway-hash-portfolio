@@ -15,7 +15,7 @@ const contact = forwardRef((props, ref) => {
             <h1 className={`${styles.header} ${props.prop ? utilities.header_show : utilities.header_hide}`}>CONTACT</h1>
             <div className={`${utilities.paragraph_container} ${props.prop ? utilities.paragraph_show : utilities.paragraph_hide}`}>
                 <p className={utilities.paragraph}>
-                    If you want to know more about me or just want to contact me, feel free to use these options.
+                    Feel free to use these options if you want to know more about me or just want to contact me.
                 </p>
                 <div className={styles.flex}>
                     <button className={`${styles.button} ${styles.first_button}`}>
