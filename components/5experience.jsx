@@ -14,7 +14,7 @@ const experience = forwardRef((props, ref) => {
                     Curious? Click the button below.
                 </p>
                 <div className={styles.flex}>
-                    <a href='/#experience_main' className={styles.button}>Take me to EXPERIENCES</a>
+                    <a aria-label="experience_main" className={styles.button} href="/#experience_main">Take me to EXPERIENCES</a>
                 </div>
             </div>
         </section>
