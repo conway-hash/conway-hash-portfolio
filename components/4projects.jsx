@@ -15,7 +15,7 @@ const projects = forwardRef((props, ref) => {
                 </p>
 
                 <div className={styles.flex}>
-                    <a aria-label="projects_main" className={styles.button} href="/#projects_main">Take me to PROJECTS</a>
+                    <Link href="/#projects_main" aria-label="projects_main" className={styles.button}>Take me to PROJECTS</Link>
                 </div>
             </div>
 
