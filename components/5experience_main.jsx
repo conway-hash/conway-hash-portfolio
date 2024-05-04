@@ -1,5 +1,6 @@
 import styles from './5experience.module.css'
 import utilities from '/styles/utilities.module.css'
+import Link from 'next/link'
 import React, { forwardRef } from 'react';
 
 const experience_main = forwardRef((props, ref) => {
@@ -7,7 +8,7 @@ const experience_main = forwardRef((props, ref) => {
         <section ref={ref} id="experience_main" className={`${utilities.section} ${styles.container}`}>
             <h1 className={`${styles.header} ${props.prop ? utilities.header_show : utilities.header_hide}`}>EXPERIENCE</h1>
             <div className={`${styles.flex} ${utilities.casual_container} ${props.prop ? utilities.casual_show : utilities.casual_hide}`}>
-                <a href="/#experience" className={styles.button}>Back to home</a>
+                <Link href="/#experience" aria-label="experience" className={styles.button}>Back to home</Link>
             </div>
             <div className={`${styles.grid} ${utilities.casual_container} ${props.prop ? utilities.casual_show : utilities.casual_hide}`}>
                 <a className={styles.grid_el} href='https://en.m.wikipedia.org/wiki/HTML'>
@@ -57,6 +58,18 @@ const experience_main = forwardRef((props, ref) => {
                 <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/Haskell'>
                     <div className={styles.grid_el_overlay}><h1>Haskell</h1></div>
                     <img src='https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Logo_of_the_Haskell_programming_language.svg/800px-Logo_of_the_Haskell_programming_language.svg.png' />
+                </a>
+                <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/C_(programming_language)'>
+                    <div className={styles.grid_el_overlay}><h1>C</h1></div>
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg' />
+                </a>
+                <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/Unix'>
+                    <div className={styles.grid_el_overlay}><h1>Unix</h1></div>
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/UNIX_logo.svg/122px-UNIX_logo.svg.png' />
+                </a>
+                <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/Bash_(Unix_shell)'>
+                    <div className={styles.grid_el_overlay}><h1>Bash</h1></div>
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Gnu-bash-logo.svg/216px-Gnu-bash-logo.svg.png' />
                 </a>
             </div>
         </section>
