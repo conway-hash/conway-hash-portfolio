@@ -8,10 +8,10 @@ const projects = forwardRef((props, ref) => {
             <h1 className={`${styles.header} ${props.prop ? utilities.header_show : utilities.header_hide}`}>PROJECTS</h1>
             <div className={`${utilities.paragraph_container} ${props.prop ? utilities.paragraph_show : utilities.paragraph_hide}`}>
                 <p className={utilities.paragraph}>
-                    A quick preview of all my projects that i worked on <b><i>[so far !]</i></b>. I sure hope they will grow in numbers.
+                    This is a quick preview of all the projects I have worked on <b><i>[so far !]</i></b>. I sure hope they will grow in numbers.
                 </p>
                 <p className={utilities.paragraph}>
-                    Anyways, you should at least take a look at them.
+                    Anyway, you should at least take a look at them.
                 </p>
 
                 <div className={styles.flex}>
