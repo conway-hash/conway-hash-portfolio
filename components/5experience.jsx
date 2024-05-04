@@ -1,5 +1,6 @@
 import styles from './5experience.module.css'
 import utilities from '/styles/utilities.module.css'
+import Link from 'next/link'
 import React, { forwardRef } from 'react';
 
 const experience = forwardRef((props, ref) => {
@@ -14,7 +15,7 @@ const experience = forwardRef((props, ref) => {
                     Curious? Click the button below.
                 </p>
                 <div className={styles.flex}>
-                    <a aria-label="experience_main" className={styles.button} href="/#experience_main">Take me to EXPERIENCES</a>
+                    <Link href="/#experience_main" aria-label="experience_main" className={styles.button}>Take me to EXPERIENCES</Link>
                 </div>
             </div>
         </section>
