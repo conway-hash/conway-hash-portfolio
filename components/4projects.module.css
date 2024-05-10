@@ -74,11 +74,13 @@
 .grid_el:hover .grid_el_overlay{
     background: rgba(var(--pink-c),0);
 }
+/*
 .grid_el:hover h2{
     top: 0;
     left: 0;
     transform: translateX(0) translateY(0);
 }
+*/
 .grid_el:hover img{
     filter: grayscale(0);
 }
