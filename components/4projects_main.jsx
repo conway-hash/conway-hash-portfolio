@@ -14,22 +14,22 @@ const projects_main = forwardRef((props, ref) => {
                 <a className={styles.grid_el} href='https://habito-one.vercel.app/'>
                     <div className={styles.grid_el_overlay}></div>
                     <h2>HabitōTestV0 (Dskt/Mob)</h2>
-                    <img src='media/projects/habito0.png' />
+                    <img src='media/projects/habito0.png' alt='HabitoV0' />
                 </a>
                 <a className={styles.grid_el} href='https://habito-app.vercel.app/'>
                     <div className={styles.grid_el_overlay}></div>
                     <h2>HabitōTestV1 (Mob)</h2>
-                    <img src='media/projects/habito1.png' />
+                    <img src='media/projects/habito1.png' alt='HabitoV1' />
                 </a>
                 <a className={styles.grid_el} href='https://zdraver.sk/'>
                     <div className={styles.grid_el_overlay}></div>
                     <h2>Zdraver.sk</h2>
-                    <img src='media/projects/zdraver.png' />
+                    <img src='media/projects/zdraver.png' alt='Zdraver' />
                 </a>
                 <a className={styles.grid_el} href=''>
                     <div className={styles.grid_el_overlay}></div>
                     <h2>Elimo.sk</h2>
-                    <img src='media/projects/elimo.PNG' />
+                    <img src='media/projects/elimo.PNG' alt='Elimo' />
                 </a>
                 {/*
                 <a className={styles.grid_el} href='http://elimo.sk/'>
