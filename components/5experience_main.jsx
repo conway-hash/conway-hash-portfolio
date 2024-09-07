@@ -57,7 +57,7 @@ const experience_main = forwardRef((props, ref) => {
                 </a>
                 <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/Haskell'>
                     <div className={styles.grid_el_overlay}><h1>Haskell</h1></div>
-                    <img src='https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Logo_of_the_Haskell_programming_language.svg/800px-Logo_of_the_Haskell_programming_language.svg.png' alt='Haskell' />
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Logo_of_the_Haskell_programming_language.svg/375px-Logo_of_the_Haskell_programming_language.svg.png' alt='Haskell' />
                 </a>
                 <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/C_(programming_language)'>
                     <div className={styles.grid_el_overlay}><h1>C</h1></div>
