@@ -47,21 +47,36 @@ const experience_main = forwardRef((props, ref) => {
                     <div className={styles.grid_el_overlay}><h1>Express</h1></div>
                     <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Expressjs.png/120px-Expressjs.png' alt='Express' />
                 </a>
+                
                 <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/Python_(programming_language)'>
                     <div className={styles.grid_el_overlay}><h1>Python</h1></div>
                     <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/121px-Python-logo-notext.svg.png' alt='Python' />
                 </a>
+                <a className={styles.grid_el} href='https://streamlit.io/'>
+                    <div className={styles.grid_el_overlay}><h1>Streamlit</h1></div>
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/7/77/Streamlit-logo-primary-colormark-darktext.png' />
+                </a>
+                <a className={styles.grid_el} href='https://www.langchain.com/'>
+                    <div className={styles.grid_el_overlay}><h1>LangChain</h1></div>
+                    <img src='https://media.licdn.com/dms/image/D4D12AQGQQFHNeQJRgQ/article-cover_image-shrink_720_1280/0/1711873462713?e=2147483647&v=beta&t=u5ls9p4LHatE_PxtiNIm23lIFGMaAjp-XHdV7TwwDxE' />
+                </a>
+
+                <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/C_Sharp_(programming_language)#:~:text=C%23%20(%2F%CB%8Csi%CB%90%20%CB%88,Paradigm'>
+                    <div className={styles.grid_el_overlay}><h1>C#</h1></div>
+                    <img src='https://miro.medium.com/v2/resize:fit:1400/1*_NVBTVdmjt3Qvq3CZOySXg.png' alt='C#' />
+                </a>   
                 <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/C%2B%2B'>
                     <div className={styles.grid_el_overlay}><h1>C++</h1></div>
                     <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/120px-ISO_C%2B%2B_Logo.svg.png' alt='C++' />
                 </a>
-                <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/Haskell'>
-                    <div className={styles.grid_el_overlay}><h1>Haskell</h1></div>
-                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Logo_of_the_Haskell_programming_language.svg/375px-Logo_of_the_Haskell_programming_language.svg.png' alt='Haskell' />
-                </a>
                 <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/C_(programming_language)'>
                     <div className={styles.grid_el_overlay}><h1>C</h1></div>
                     <img src='https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg' alt='C' />
+                </a>
+                
+                <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/Haskell'>
+                    <div className={styles.grid_el_overlay}><h1>Haskell</h1></div>
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Logo_of_the_Haskell_programming_language.svg/375px-Logo_of_the_Haskell_programming_language.svg.png' alt='Haskell' />
                 </a>
                 <a className={styles.grid_el} href='https://en.wikipedia.org/wiki/Unix'>
                     <div className={styles.grid_el_overlay}><h1>Unix</h1></div>
