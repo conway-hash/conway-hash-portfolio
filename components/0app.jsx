@@ -1,5 +1,6 @@
 import Nav from './1nav';
 import Landing from './2landing';
+import Schedule from './2schedule';
 import About from './3about';
 import Projects from './4projects';
 import Projects_main from './4projects_main'
@@ -15,6 +16,7 @@ import { useState, useEffect, useRef } from 'react';
 export default function App() {
 
     const sectionRefs = [
+        useRef(null),
         useRef(null),
         useRef(null),
         useRef(null),
@@ -60,6 +62,8 @@ export default function App() {
         switch (intersectingSection) {
             case 'landing':
                 return { backgroundColor: 'rgba(var(--main-color),0.2)' };
+            case 'schedule':
+                return { backgroundColor: 'rgba(var(--main-color),0.3)' };
             case 'about':
                 return { backgroundColor: 'rgba(var(--blue-c),0.2)' };
             case 'projects':
@@ -81,13 +85,19 @@ export default function App() {
         <div className={styles.container} style={getContainerStyle()}>
             <Conway />
             <Nav intersectingSection={intersectingSection} />
+
             <Landing ref={sectionRefs[0]} prop={intersectingSection == 'landing' ? true : false} />
-            <About ref={sectionRefs[1]} prop={intersectingSection == 'about' ? true : false} />
-            <Projects ref={sectionRefs[2]} prop={intersectingSection == 'projects' ? true : false} />
-            <Projects_main ref={sectionRefs[3]} prop={intersectingSection == 'projects_main' ? true : false} />
-            <Experience ref={sectionRefs[4]} prop={intersectingSection == 'experience' ? true : false} />
-            <Experience_main ref={sectionRefs[5]} prop={intersectingSection == 'experience_main' ? true : false} />
-            <Contact ref={sectionRefs[6]} prop={intersectingSection == 'contact' ? true : false} />
+            <Schedule ref={sectionRefs[1]} prop={intersectingSection == 'schedule' ? true : false} />
+
+            <About ref={sectionRefs[2]} prop={intersectingSection == 'about' ? true : false} />
+
+            <Projects ref={sectionRefs[3]} prop={intersectingSection == 'projects' ? true : false} />
+            <Projects_main ref={sectionRefs[4]} prop={intersectingSection == 'projects_main' ? true : false} />
+
+            <Experience ref={sectionRefs[5]} prop={intersectingSection == 'experience' ? true : false} />
+            <Experience_main ref={sectionRefs[6]} prop={intersectingSection == 'experience_main' ? true : false} />
+
+            <Contact ref={sectionRefs[7]} prop={intersectingSection == 'contact' ? true : false} />
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import styles from './2landing.module.css'
 import utilities from '/styles/utilities.module.css'
 import { forwardRef, useEffect, useState } from 'react';
+import Link from 'next/link'
 
 const landing = forwardRef((props, ref) => {
 
@@ -57,6 +58,7 @@ const landing = forwardRef((props, ref) => {
                 <p className={styles.paragraph}>
                     Welcome to my website!
                 </p>
+                <Link href="/#schedule" aria-label="schedule" className={`${styles.button} ${styles.landing_button}`} >Take me SCHEDULE</Link>
             </div>
         </section>
     )

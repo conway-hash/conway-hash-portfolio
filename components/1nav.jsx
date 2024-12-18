@@ -65,7 +65,10 @@ export default function Nav({ intersectingSection }) {
             </nav>
 
             <nav className={styles.nav_desktop}>
-                <Link href="/#home" aria-label="home" className={`${styles.nav_desktop_button} ${intersectingSection === "home" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
+                <div className={styles.nav_desktop_btn_cont}>
+                    <Link href="/#home" aria-label="home" className={`${styles.nav_desktop_button} ${intersectingSection === "home" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
+                    <Link href="#schedule" aria-label="schedule" className={`${styles.nav_desktop_button} ${intersectingSection === "schedule" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
+                </div>
                 <Link href="/#about" aria-label="about" className={`${styles.nav_desktop_button} ${intersectingSection === "about" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
                 <div className={styles.nav_desktop_btn_cont}>
                     <Link href="/#projects" aria-label="projects" className={`${styles.nav_desktop_button} ${intersectingSection === "projects" ? styles.nav_desktop_btn_active : styles.nav_desktop_btn_inactive} `}></Link>
