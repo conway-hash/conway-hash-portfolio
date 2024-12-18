@@ -7,7 +7,7 @@ const schedule = forwardRef((props, ref) => {
 
     return (
         <section ref={ref} id="schedule" className={`${utilities.section} ${styles.container}`}>
-            <h1 className={`${styles.header} ${props.prop ? utilities.header_show : utilities.header_hide}`}>MY SCHEDULE</h1>
+            <h1 className={`${styles.header} ${props.prop ? utilities.header_show : utilities.header_hide}`}>SCHEDULE</h1>
             <div className={`${styles.flex} ${utilities.casual_container} ${props.prop ? utilities.casual_show : utilities.casual_hide}`}>
                 <Link href="/#home" aria-label="home" className={styles.button}>Back to home</Link>
             </div>

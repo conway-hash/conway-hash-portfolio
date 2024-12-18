@@ -6,7 +6,7 @@ import React, { forwardRef } from 'react';
 const projects_main = forwardRef((props, ref) => {
     return (
         <section ref={ref} id="projects_main" className={`${utilities.section} ${styles.container}`}>
-            <h1 className={`${styles.header} ${props.prop ? utilities.header_show : utilities.header_hide}`}>MY PROJECTS</h1>
+            <h1 className={`${styles.header} ${props.prop ? utilities.header_show : utilities.header_hide}`}>PROJECTS</h1>
             <div className={`${styles.flex} ${utilities.casual_container} ${props.prop ? utilities.casual_show : utilities.casual_hide}`}>
                 <Link href="/#projects" aria-label="projects" className={styles.button}>Back to home</Link>
             </div>

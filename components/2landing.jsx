@@ -58,7 +58,7 @@ const landing = forwardRef((props, ref) => {
                 <p className={styles.paragraph}>
                     Welcome to my website!
                 </p>
-                <Link href="/#schedule" aria-label="schedule" className={`${styles.button} ${styles.landing_button}`} >Take me SCHEDULE</Link>
+                <Link href="/#schedule" aria-label="schedule" className={`${styles.button} ${styles.landing_button}`} >Take me to SCHEDULE</Link>
             </div>
         </section>
     )
